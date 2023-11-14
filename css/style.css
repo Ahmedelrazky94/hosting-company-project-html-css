@@ -1,0 +1,171 @@
+/* lato font  */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@400;700&family=Roboto:wght@300&display=swap');
+
+/*utilites*/
+
+:root {
+    --primary-color:#047aed;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+body {
+    font-family: 'lato';
+}
+
+h1 {
+    line-height: 1.2;
+    padding:10px 0 ;
+    font-weight: 500;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 2%;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0px 40px;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type='text'] ,input[type='email'] {
+    margin: 5% 0;
+    padding: 0.5% 0;
+    border: 0px;
+    border-bottom: 1px #333 solid;
+    width: 100%;
+    color: #333;
+}
+input::placeholder {
+    color:#333;
+}
+
+input:focus {
+    outline: white;
+}
+
+input[type='submit']:hover , button:hover , .btn:hover {
+    transform: scale(0.98);
+}
+
+/* navbar */
+.logo {
+    font-size: 30px;
+}
+.navbar ul {
+    display: flex;
+
+}
+
+.navbar a {
+    color: white;
+    margin: 10px;
+    padding: 5px;
+}
+
+.navbar a:hover {
+ border-bottom: 1px white solid;
+}
+
+/* hero */
+
+.hero {
+    background-color: var(--primary-color);
+    color: white;
+}
+.skew {
+    background-color: white;
+    transform: skewY(-3deg);
+    margin-top: -2%;
+    height: 80px;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    padding: 3% 0%;
+    align-items: center;
+}
+
+.form {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    position: relative;
+    top: 25%;
+    z-index: 100;
+}
+
+.form-heading {
+    color: #333;
+}
+.hero-text h1 {
+    font-size: 3rem;
+}
+.hero-text p {
+    margin-bottom: 25px;
+}
+.form h1 {
+    font-weight: 100;
+}
+input[type='submit'] {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5%;
+    font-family: 'lato';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btn-hero {
+    color: white;
+    border: 1px white solid;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
+/*showcase*/
+.show p {
+    margin-top: 50px;
+    color: #333;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
